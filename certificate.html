@@ -25,6 +25,7 @@
    ================================================== -->
 	<script src="js/modernizr.js"></script>
 	<script src="js/pace.min.js"></script>
+	<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
    <!-- favicons
 	================================================== -->
@@ -294,7 +295,113 @@
    	</div> <!-- end portfolio-content -->   	
 
    </section>  <!-- end portfolio -->	
+		<!-- contact
+
+   ================================================== -->
+
+   <section id="contact">
+
+      <div class="overlay"></div>
+
+		<div class="row narrow section-intro with-bottom-sep animate-this">
+   		<div class="col-twelve">
+   			<h3>For</h3>
+   			<h1>Contact Me</h1>
+   		</div> 
+   	</div> <!-- end section-intro -->
+
+   	<div class="row contact-content">
+
+   		<div class="col-seven tab-full animate-this">
+
+   			<h5>Send Me A Message</h5>
+
+            <!-- form -->
+            <form name="contactForm" id="contactForm" method="post">     			
+
+               <div class="form-field">
+ 					   <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
+               </div>
+
+               <div class="row">
+                 	<div class="col-six tab-full">
+                 		<div class="form-field">
+                 			<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
+                 		</div>		      			   
+		            </div>
+	            	<div class="col-six tab-full">	            
+	            		<div class="form-field">
+	            			<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
+	                  </div>		     				   
+		            </div>
+               </div>
+                                         
+               <div class="form-field">
+	              	<textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
+	            </div> 
+
+               <div class="form-field">
+                  <button class="submitform">Submit</button>
+
+                  <div id="submit-loader">
+                     <div class="text-loader">Sending...</div>                             
+       			      <div class="s-loader">
+							  	<div class="bounce1"></div>
+							  	<div class="bounce2"></div>
+							  	<div class="bounce3"></div>
+							</div>
+						</div>
+               </div>
+
+      		</form> <!-- end form -->
+
+            <!-- contact-warning -->
+            <div id="message-warning"></div> 
+
+            <!-- contact-success -->
+      		<div id="message-success">
+               <i class="fa fa-check"></i>Your message was sent, thank you!<br>
+      		</div>
+
+         </div> <!-- end col-seven --> 
+
+         <div class="col-four tab-full contact-info end animate-this">
+
+         	<h5>Contact Information</h5>
+
+         	<div class="cinfo">
+          <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="in_ID" data-type="horizontal" data-theme="dark" data-vanity="denycode"><a class="LI-simple-link" href='https://id.linkedin.com/in/denycode?trk=profile-badge'>Deni Irawan Nugraha</a></div>
+	   			<h6>Address</h6>
+	   			<p>
+	            	Sindangkerta, West Bandung<br>
+	            	West Java, Indonesia<br>
+	            	40563.
+	            </p>
+	   		</div> <!-- end cinfo -->
+
+	   		<div class="cinfo">
+	   			<h6>Email</h6>
+	   			<p>
+	   				deni.irawan40563@gmail.com
+				   </p>
+	   		</div> <!-- end cinfo -->
+
+	   		<div class="cinfo">
+	   			<h6>Mobile</h6>
+	   			<p>
+	   				Mobile: (+62) 831 7486 9601<br>
+				   Whatapp: (+62) 838 2232 2603<br>
+				   </p>
+				
+				 </div>
+
+         </div> <!-- end cinfo --> 
+
+   	</div> <!-- end row contact-content -->
 	
+	</section> <!-- end contact -->
+
+
 	<footer>
 
    	<div>
