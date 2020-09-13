@@ -8,77 +8,112 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Deni Irawan.N Portopolio Website</title>
   </head>
-  <body class="bg-white">
+  <body class="bg-light">
 	<div class="container row mx-auto mt-4">
 		<div class="mx-auto mt-3">
 			<img src="/images/logo.svg" class="rounded-circle image-profile">
 			<h2 class="ml-n4 text-muted">DenyCode.</h2>
 			<nav class="nav ml-n5">
 				<a class="nav-link text-muted" href="#">Home</a>
-				<a class="nav-link text-muted" href="#">Bio</a>
-				<a class="nav-link text-muted" href="#">Contact</a>
+				<p class="nav-link text-muted"> &</p>
+				<a class="nav-link text-muted" data-toggle="modal" data-target="#staticBackdrop">About</a>
 			</nav>
 		</div>
-		<div class="card-columns">
-			<div class="card">
-			  <a href=""><img src="/images/portfolio/soonGreen.jpg" class="card-img-top" alt="..."></a>
+		<div class="row">
+		<div class="col-3">
+		<div class="card" style="width: 18rem;">
+			<img src="/images/PSX_20200524_122302.jpg" class="card-img-top" alt="...">
+			<div class="card-body">
+				<h5 class="card-title">Deni Irawan Nugraha</h5>
+				<p class="card-text text-left text-muted">Saya memiliki minat yang besar terhadap bidang pengembangan web dengan  bahasa pemrograman utama adalah javascript dan saya familiar di bidang baik front-end maupun back-end, fundamental user experience dan basic web design.</p>
 			</div>
-			<div class="card p-3">
-			  <blockquote class="blockquote mb-0 card-body">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-				<footer class="blockquote-footer">
-				  <small class="text-muted">
-					Someone famous in <cite title="Source Title">Source Title</cite>
-				  </small>
-				</footer>
-			  </blockquote>
+			<div class="card-body text-center">
+				<a href="#" class="card-link text-muted"><i class="fa fa-linkedin"></i></a>
+				<a href="#" class="card-link text-muted"><i class="fa fa-instagram"></i></a>
+				<a href="#" class="card-link text-muted"><i class="fa fa-envelope"></i></a>
 			</div>
-			<div class="card bg-light">
-			  <img src="/images/portfolio/soonYellow.jpg" class="card-img-top" alt="...">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-				<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+		</div>
+		<div class="card mt-3" style="width: 18rem;">
+			<div class="card-header">
+			  Kontak
+			</div>
+			<ul class="list-group list-group-flush">
+			  <li class="list-group-item"><i class="fa fa-instagram"></i> @deni.irn</li>
+			  <li class="list-group-item"><i class="fa fa-envelope"></i> deni.irawan40563@gmail.com</li>
+			  <li class="list-group-item"><i class="fa fa-whatsapp"></i> +62 838-2232-2603</li>
+			</ul>
+		  </div>
+	</div>
+	<div class="col-8 ml-3 overflow-auto">
+		<div class="row row-cols-1 row-cols-md-2">
+			<div class="col mb-4">
+			  <div class="card">
+				<img src="/images/portfolio/soonBlue.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Card title</h5>
+				  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				</div>
 			  </div>
 			</div>
-			<div class="card bg-primary text-white text-center p-3">
-			  <blockquote class="blockquote mb-0">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
-				<footer class="blockquote-footer text-white">
-				  <small>
-					Someone famous in <cite title="Source Title">Source Title</cite>
-				  </small>
-				</footer>
-			  </blockquote>
-			</div>
-			<div class="card text-center">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This card has a regular title and short paragraphy of text below it.</p>
-				<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			<div class="col mb-4">
+			  <div class="card">
+				<img src="/images/portfolio/soonGreen.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Card title</h5>
+				  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				</div>
 			  </div>
 			</div>
-			<div class="card p-3 text-right">
-			  <blockquote class="blockquote mb-0">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-				<footer class="blockquote-footer">
-				  <small class="text-muted">
-					Someone famous in <cite title="Source Title">Source Title</cite>
-				  </small>
-				</footer>
-			  </blockquote>
+			<div class="col mb-4">
+			  <div class="card">
+				<img src="/images/portfolio/soonYellow.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Card title</h5>
+				  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+				</div>
+			  </div>
 			</div>
-			<div class="card">
-			  <div class="card-body">
-				<h5 class="card-title">Card title</h5>
-				<p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-				<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+			<div class="col mb-4">
+			  <div class="card">
+				<img src="/images/portfolio/soonBlue.jpg" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">Card title</h5>
+				  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+				</div>
 			  </div>
 			</div>
 		  </div>
 	</div>
+	</div>
+	<div class="container-fluid mt-5">
+	<blockquote class="blockquote text-center">
+		<p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+		<footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+	</blockquote>
+	</div>
+	</div>
+	<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+			</div>
+			<div class="modal-body">
+			  ...
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-primary">Understood</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
