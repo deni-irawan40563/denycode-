@@ -2,7 +2,7 @@
 
 body {
   font-family: 'Martel Sans', sans-serif;
-  color: #272829;
+  color: #232934;
   background-color: azure;
   margin: 0;
   padding: 0;
@@ -41,37 +41,60 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #BCF5D5;
   border-radius: 10px;
   height: 400px;
-  box-shadow: rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+}
+.profile:hover{
+  background-color: #abecc7;
+}
+.profile-text p {
+  font-size: 14px;
+  color: #444644;
 }
 .contact {
   grid-area: contact;
   background-color: #C0E5FF;
   border-radius: 10px;
   padding-top: 50px;
-  box-shadow: rgba(0, 0, 0, 0.7);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.contact:hover{
+  background-color: #a1d2f5;
 }
 .portfolio {
   grid-area: portfolio;
   background-color: #D5D4F4;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.7);
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
+}
+.portfolio:hover{
+  background-color: #bcbafa;
 }
 .resume {
   grid-area: resume;
   background-color: #FFEACB;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.7);
+  box-shadow: 2px -2px 5px rgba(0, 0, 0, 0.3);
+}
+.resume:hover{
+  background-color: #fad091;
 }
 .blog {
   grid-area: blog;
   background-color: #FFD8D8;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.7);
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.3);
 }
-
-img {
+.blog:hover {
+  background-color: #f8aeae;
+}
+.img-icons {
   height: 220px;
   margin: 10px;
+}
+.img-icons:hover{
+  height: 221px;
+  z-index: 1;
 }
 .hire-btn {
   border-radius: 10px;
@@ -82,8 +105,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
-
+.hire-btn:hover {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  background-color: rgb(197, 255, 197)
+}
 .profile {
   display: grid;
   grid-template-areas: "social-media social-media"
@@ -98,6 +125,9 @@ img {
   justify-content: center;
   align-items: center;
 }
+.profile-icon {
+  height: 300px;
+}
 .icon-social {
   grid-area: social-media ;
 }
@@ -105,4 +135,62 @@ img {
   margin-top: 40px;
   height: 30px;
   width: 30px;
+  cursor: pointer;
+}
+@media(max-width: 992px){
+.container {
+    grid-template-areas: "profile profile"
+                          "contact resume"
+                          "portfolio blog";
+    grid-template-columns: 2fr 2fr 2fr;
+    width: 100%;
+  }
+.icon-social {
+  text-align: center;
+  }
+.icon-social img {
+    margin-top: 20px;
+  }
+.profile-text p {
+  display: none;
+}
+.profile {
+  display: grid;
+  grid-template-areas: "social-media social-media"
+                        "profile img";
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: 1fr 4fr;
+  text-align: left;
+  padding-left: 15px;
+}
+}
+
+@media(max-width: 576px){
+  .container {
+    grid-template-areas: "profile"
+                          "contact"
+                          "resume"
+                          "portfolio"
+                          "blog";
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+.icon-social {
+  text-align: center;
+  }
+.icon-social img {
+    margin-top: 20px;
+  }
+.profile-text p {
+  display: none;
+}
+.profile {
+  display: grid;
+  grid-template-areas: "social-media social-media"
+                        "profile img";
+  grid-template-columns: 4fr 2fr;
+  grid-template-rows: 1fr 4fr;
+  text-align: left;
+  padding-left: 5px;
+}
 }
