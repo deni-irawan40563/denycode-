@@ -25,20 +25,20 @@
 <div class="container">
   <div class="profile">
     <div class="icon-social">
-      <img src="./assets/img/icon/github.svg">
-      <img src="./assets/img/icon/linkedin.svg">
-      <img src="./assets/img/icon/medium.svg">
+      <a href="https://github.com/deni-irawan40563"><img src="./assets/img/icon/github.svg"></a>
+      <a href="https://www.linkedin.com/in/deniirawan99/"><img src="./assets/img/icon/linkedin.svg"></a>
+      <a href="https://medium.com/@deni.irawan40563"><img src="./assets/img/icon/medium.svg"></a>
     </div>
     <div class="profile-text">
       <h2>Hello I'm Deni Irawan Nugraha <br>Full Stack Web Developer</h2>
       <p>Currently focused on learning in JavaScript, but exposed in all aspects of web development including front and back end, version management with git. I do programming fulltime, I always keep to learn deep into the fundamentals of the languages and moving forward into web development with the latest technologies required to work with it.</p>
-      <div class="hire-btn"><h3>Hire Me</h3></div>
+      <div class="hire-btn" id="btn-hire"><h3>Hire Me</h3></div>
     </div>
     <div class="profile-img">
       <img src="./assets/img/icon/undraw_referral_4ki4 (1).svg" class="profile-icon">
     </div>
   </div>
-  <div class="contact">
+  <div class="contact" id="myBtn">
     <img src="./assets/img/icon/communicate.svg" class="img-icons">
     <h3>Contact Me</h3>
   </div>
@@ -46,15 +46,67 @@
       <img src="./assets/img/icon/website.svg" class="img-icons">
     <h3>It's My Portfolio</h3>
   </div>
-  <div class="resume">
+  <a href="gallery.html" class="resume">
     <img src="./assets/img/icon/certificate.svg" class="img-icons">
     <h3>See My Certificate Here</h3>
-  </div>
-  <div class="blog">
+  </a>
+  <a href="https://medium.com/@deni.irawan40563" class="blog" target="blank">
     <img src="./assets/img/icon/blog.svg" class="img-icons">
     <h3>See My Writing</h3>
+  </a>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <a href="mailto:deni.irawan40563@gmail.com" class="email" target="blank">
+        <img src="./assets/img/icon/mail-inbox-app.svg">
+        <p>deni.irawan40563@gmail.com</p>
+    </a>
+    <a href="http://wa.me/+6283174869601" class="wa" target="blank">
+      <img src="./assets/img/icon/whatsapp.svg">
+      <p>+62 831-7486-9601</p>
+    </a>
+    <a href="https://t.me/denycode" class="telegram" target="blank">
+      <img src="./assets/img/icon/telegram.svg">
+      <p>https://t.me/denycode</p>
+    </a>
   </div>
 </div>
+<div id="hireModal" class="modalHire">
+    <div class="login-box formHire">
+      <span class="closeHire">&times;</span>
+      <h2>Direct Hire</h2>
+      <form>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Company Name</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Email</label>
+        </div>
+        <div class="user-box">
+          <input type="option" name="" required="">
+          <label>For Position</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="" required="">
+          <label>Message</label>
+        </div>
+        <a href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </a>
+      </form>
+    </div>
+</div>
+<script src="main.js"></script>
 </body>
 
 </html>
