@@ -18,8 +18,10 @@ body {
   text-align: center;
   margin-bottom: 40px;
 }
-p{
-  margin-top: 20px;
+footer {
+  bottom: 0;
+  color: #ababab;
+  margin-top: 150px;
 }
 .gallery_container-all {
   width: 90%;
