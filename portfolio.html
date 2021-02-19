@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/gallery.css">
 </head>
 <body>
@@ -11,16 +12,51 @@
     <div class="intro">
       <h1>My Portfolio</h1>
     </div>
-    <div class="gallery_container">
-      <img src="./assets/img/portfolio/pos-app/smartmockups_kgn0c9f9.jpg">
-      <span class="gallery_title">Pos App</span>
-      <span class="gallery_text">Application for Order Food On F&B Industry</span>
+
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="./PortfolioPage/TokoFuku.html">Detail</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live Demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Source Code</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <img src="./assets/img/portfolio/tokofuku/smartmockups_kf1usoj7.jpg" class="mt-2 mb-2" style="width: 100%;height: 350px;object-fit: cover;">
+        <h5 class="card-title">E-Commerce Tokofuku</h5>
+        <p class="card-text">Aplikasi web untuk kebutuhan toko online dengan framework vue js</p>
+        <a href="./PortfolioPage/TokoFuku.html" class="btn btn-primary">Lihat Detail</a>
+      </div>
     </div>
-    <div class="gallery_container">
-      <img src="./assets/img/portfolio/tokofuku/smartmockups_kf1usoj7.jpg">
-      <span class="gallery_title">Tokofuku</span>
-      <span class="gallery_text">E-Commerce Application With Multi Seller</span>
+
+    <div class="card text-center mt-3">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+            <a class="nav-link active" href="">Detail</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Live Demo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Source Code</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+        <img src="./assets/img/portfolio/pos-app/smartmockups_kgn0c9f9.jpg" class="mt-2 mb-2" style="width: 100%;height: 350px;object-fit: cover;">
+        <h5 class="card-title">E-Commerce Tokofuku</h5>
+        <p class="card-text">Aplikasi web untuk kebutuhan toko online dengan framework vue js</p>
+        <a href="#" class="btn btn-primary">Lihat Detail</a>
+      </div>
     </div>
+
     <footer>
       <p>Deni Irawan Nugraha | &copy;2021</p>
     </footer>
